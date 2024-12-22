@@ -1,5 +1,8 @@
+// Briefing  (Describe code lines of content)
 
-// 1-->> Leap Year 
+
+
+// 1-->> Leap Year <--
 
 /*
 #include <iostream>
@@ -17,7 +20,7 @@ int main(){
 }
 */
 
-// 2--> nested loops [Need more understanding about it]
+// 2--> nested loops [Need more understanding about it] <--
 /*
 #include<iostream>
 using namespace std;
@@ -35,7 +38,7 @@ int main(){
 }
 */
 
-// 3-->> Check out the sum of user input number upto 10
+// 3-->> Check out the sum of user input number upto 10 [Addition of continoys numbers in a series] <-- 
 /*
 #include<iostream>
 using namespace std;
@@ -54,7 +57,7 @@ int main(){
 }
 */
 
-//4-->> Check out the sum of user input number upto 0 [Opposite of above code]
+//4-->> Check out the sum of user input number upto 0 [Opposite of above code] <--
 /*
 #include<iostream>
 using namespace std;
@@ -90,7 +93,7 @@ int main(){
     cout<<"Addition of Individual number " <<sum;
 }
 
-// -->>  Substraction of Individual number
+// -->>  Substraction of Individual number <--
 
 #include <iostream>
 using namespace std;
@@ -107,5 +110,33 @@ int main(){
     cout<<"Substraction of Individual number " <<sum;
 }
 
-Note :- Just a minor change for indiviually [Add,substract,multiply and divide]
+Note :- Put a minor change for indiviuall digits ko [Add,substract,multiply and divide]
 */
+
+
+// --> Whether a Palindrome Number or not <--
+/*
+#include <iostream>
+using namespace std;
+int main() {
+    int num;
+    cout<<"Enter ";
+    cin>>num;
+    int original = num; // Creates a copy of the user input number to compare it later as to check whether the number is palindrome or not 
+    int rv = 0; // Creates a rv variable to store the last digit of user input number
+    while(num>0){
+        rv=rv*10+num%10; // replicating the reveresed value into the number taken as input to compare it with original number to check palindromability of a number
+        num=num/10; // updating number value by dividing it by 10 as to get the all its digit into rv [which are created to store the last digit of user input number] 
+    }
+    if(rv==original){
+        cout<<"Palindrome " <<"\n";
+    }
+    else{
+        cout<<"Not palindrome " <<"\n";
+    }
+    cout<<"number is = "<<num; // user input becomes zero at the end of the loop [checking the palindrome possibility is all possible with the help of making a copy of user input number at the earliest above (int original = num;)] 
+}
+
+*/
+
+
