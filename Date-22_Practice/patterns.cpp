@@ -7,7 +7,7 @@ int main(){
     int i , j ; // defined variables for row and columns
     for ( i = 0 ; i <= 5 ; i++ ) // creating 5 rows            <<--- OUTER LOOP
     {
-        for(j = 0 ; j <= 5 ; j++ ) // creating 5 columns       <<--- INNER LOOP 
+        for(j = 0 ; j <= i ; j++ ) // creating 5 columns       <<--- INNER LOOP 
         {
           if(j<=i){    // Condition ensure that stars printed upto the current rows number only : 
             cout<<"*"; // printing stars in columns through loop whenever 
@@ -20,10 +20,10 @@ int main(){
     }
 }
                         // #output
-                        // *----
-                        // **---
-                        // ***--
-                        // ****-
+                        // *
+                        // **
+                        // ***
+                        // ****
                         // *****
                         // // j<=i
 
@@ -34,13 +34,14 @@ int main(){
 
 // Mirror Of Right angle triangle  
 
+// wrong pattern
 #include <iostream>
 using namespace std;
 int main(){
     int i,j;
     for(i=1;i<=5;i++)  // Rows starting from and increasing by +1 upto 5 in every iteration
     {
-        for(j=5;j>=1;j--){ // we have columns totall number of 5 which are getting decreased upto 1 in every iteration 
+        for(j=5;j>=i-1;j--){ // we have columns totall number of 5 which are getting decreased upto 1 in every iteration 
             if(j<=i){        // whenever j <=5 it will print stars. 
                 cout<<"*";
             }
